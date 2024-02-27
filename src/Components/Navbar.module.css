@@ -1,0 +1,108 @@
+.navBar{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navOpen{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4a4564;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navLink{
+    display: flex;
+    font-size: 2em;
+    font-weight: 400;
+    color: #f1f1f1;
+    padding-top: 90px;
+}
+
+.navLink:hover{
+    cursor: pointer;
+}
+
+.border{
+    display: flex;
+    height: 1px;
+    animation-name: animacionborde;
+    animation-duration: 1s;
+    background-color: rgb(57,145,115);
+}
+
+
+@keyframes animacionborder{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 100px;
+    }
+}
+
+.logo{
+    display: flex;
+    color: #f1f1f1;
+}
+
+@media (min-width: 800px){
+    .logo{
+        font-size: 1.5em;
+    }
+    .navBar{
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height: 50px;
+    }
+    .linkContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .navLink{
+        font-weight: 400;
+        font-size: 1.4em;
+        padding-top: 4px;
+    }
+    .navLink:hover{
+        font-size: 1.5em;
+    }
+    .navOnScroll{
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height: 50px;
+        background: linear-gradient(180deg,rgb(24, 24, 24), #81af9d);
+    }
+}
+
+.navOnScroll{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a4564;
+}
+
+.contactLink{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #f1f1f1;
+    padding-top: 90px;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #508094;
+}
