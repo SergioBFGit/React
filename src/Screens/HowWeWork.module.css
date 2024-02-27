@@ -1,0 +1,17 @@
+.howWeWork{
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(24, 24, 24), #81af9d);
+    word-wrap: break-word;
+}
+
+.title{
+    font-size: 3em;
+    color: #f1f1f1;
+    font-weight: 400;
+    text-align: center;
+}
